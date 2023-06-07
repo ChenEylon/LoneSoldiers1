@@ -16,7 +16,7 @@ import sweetHome from './json/SweetHome.json'
 import users from './json/users.json'
 import walkingWithYou from './json/walkingWithYou.json'
 import warmShoulder from './json/warmShoulder.json'
-
+import FormHouse from './components/FormHouse'
 
 function App() {
   if(!localStorage.getItem("loneSoldierArr")){

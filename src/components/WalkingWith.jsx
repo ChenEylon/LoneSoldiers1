@@ -1,8 +1,16 @@
 import React from 'react'
 import './WalkingWith.css'
+import { WalkingWithPage } from './WalkingWithPage';
 
 export const WalkingWith = () => {
-  return (
-    <div>WalkingWith</div>
-  )
+  const [walkingArr, setwalkingArr] = useState([]);
+  useEffect(() => {
+      setwalkingArr(JSON.parse(localStorage.getItem("walkingArr")))
+  }, []);
+return (
+  walkingArr.map((value, index) => (
+      <WalkingWithPage key={index} index={index} />
+    ))
+)
+
 }
