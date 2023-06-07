@@ -1,7 +1,7 @@
 import React ,{useState} from 'react'
 import './WalkingWith.css'
 
-export const WalkingWithPage = () => {
+export const WalkingWithPage = ({index}) => {
   const [walkingArr, setwalkingArr] = useState(JSON.parse(localStorage.getItem("walkingArr")));
  
   let imgUrl = walkingArr[index].img;
