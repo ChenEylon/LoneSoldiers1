@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './Layout.css'
 import { Link, Outlet } from 'react-router-dom';
+import { CDBModalFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 
 export const SoldierLayout = () => {
     
@@ -9,9 +10,9 @@ export const SoldierLayout = () => {
       <nav id='navbar'>
         <Link to='/Soldier' className="link"><img className="logo" src="../../logo-with-background.png" alt="MindGames Logo" /></Link>
         <div className="nav-title"><Link to='/Soldier' className="link navLink">Home</Link><span></span></div>
-        <div className="nav-title"><Link to='/SweetHome' className="link navLink">Events</Link><span></span></div>
-        <div className="nav-title"><Link to='/WalkingWith' className="link navLink">Events</Link><span></span></div>
-        <div className="nav-title"><Link to='/WarmShoulder' className="link navLink">Events</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/SweetHome' className="link navLink">sweet home</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/WalkingWith' className="link navLink">walking</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/WarmShoulder' className="link navLink">Events</Link><span></span></div>
         {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div>
         {loginNav} */}
         
