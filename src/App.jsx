@@ -9,12 +9,13 @@ import { Homepage } from './components/Homepage'
 import { SweetHome } from './components/SweetHome'
 import { WalkingWith } from './components/WalkingWith'
 import { WarmShoulder } from './components/WarmShoulder'
-import { SignUp } from './components/SignUp'
+import  SignUp  from './components/SignUp'
 import LoneSoldier from './json/LoneSoldier.json'
 import sweetHome from './json/SweetHome.json'
 import users from './json/users.json'
 import walkingWithYou from './json/walkingWithYou.json'
 import warmShoulder from './json/warmShoulder.json'
+
 
 function App() {
   if(!localStorage.getItem("loneSoldierArr")){
