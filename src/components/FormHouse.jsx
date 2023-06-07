@@ -97,7 +97,7 @@ function FormHouse() {
                           )}
                         </div>
                       </div>
-                      <Link to='/VolunteerLayout/SweetHome'></Link>
+                      <Link to='/Soldier/SweetHome'></Link>
                       {/* Row 2 of form */}
                       <div className="row formRow">
                         <div className="col">
