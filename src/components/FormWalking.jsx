@@ -1,10 +1,9 @@
 import React, { useRef,useState } from 'react'
 import './FormHouse.css'
 import { useForm } from 'react-hook-form';
-import { toast, ToastContainer } from 'react-toastify';
-import { Link } from 'react-router-dom';
 
-function FormHouse() {
+
+function FormWalking() {
     const [submitted, setSubmitted] = useState(false);
     const {
       register,
@@ -19,14 +18,10 @@ function FormHouse() {
       const { id,
       img , 
       name,
-       lastName,
-      condition,
-      numberOfSouls,
-      aboutUs, 
+       lastName, 
       contact,
       phone,
-      location  ,
-      conditions} = data;
+     discription} = data;
   
       toast('Form sent!', {
         position: 'bottom-right',
@@ -97,7 +92,6 @@ function FormHouse() {
                           )}
                         </div>
                       </div>
-                      <Link to='/VolunteerLayout/SweetHome'></Link>
                       {/* Row 2 of form */}
                       <div className="row formRow">
                         <div className="col">
@@ -134,34 +128,8 @@ function FormHouse() {
                           {errors.message && <span className="errorMessage">Please enter a Last Name</span>}
                         </div>
                       </div>
-                      <div className="row formRow">
-                        <div className="col">
-                          <textarea
-                            rows={3}
-                            name="numberOfSouls"
-                            {...register('numberOfSouls', {
-                              required: true
-                            })}
-                            className="form-control formInput"
-                            placeholder="number Of Souls"
-                          />
-                          {errors.message && <span className="errorMessage">Please enter a number Of Souls</span>}
-                        </div>
-                      </div>
-                      <div className="row formRow">
-                        <div className="col">
-                          <textarea
-                            rows={3}
-                            name="aboutUs"
-                            {...register('aboutUs', {
-                              required: true
-                            })}
-                            className="form-control formInput"
-                            placeholder="about Us"
-                          />
-                          {errors.message && <span className="errorMessage">Please enter about Us</span>}
-                        </div>
-                      </div>
+                   
+                   
                       <div className="row formRow">
                         <div className="col">
                           <textarea
@@ -190,32 +158,19 @@ function FormHouse() {
                           {errors.message && <span className="errorMessage">Please enter a phone number</span>}
                         </div>
                       </div>
+                     
                       <div className="row formRow">
                         <div className="col">
                           <textarea
                             rows={3}
-                            name="location"
-                            {...register('location', {
+                            name="description"
+                            {...register('description', {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="location"
+                            placeholder="description"
                           />
-                          {errors.message && <span className="errorMessage">Please enter location </span>}
-                        </div>
-                      </div>
-                      <div className="row formRow">
-                        <div className="col">
-                          <textarea
-                            rows={3}
-                            name="conditions"
-                            {...register('conditions', {
-                              required: true
-                            })}
-                            className="form-control formInput"
-                            placeholder="conditions"
-                          />
-                          {errors.message && <span className="errorMessage">Please enter the conditions </span>}
+                          {errors.message && <span className="errorMessage">Please enter the description </span>}
                         </div>
                       </div>
                       <button className="submit-btn" type="submit">
@@ -240,4 +195,4 @@ function FormHouse() {
       }
 }
 
-export default FormHouse
+export default FormWalking

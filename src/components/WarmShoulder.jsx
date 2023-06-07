@@ -1,8 +1,16 @@
 import React from 'react'
 import './WarmShoulder.css'
+import { WarmShoulderPage } from './WarmShoulderPage';
 
 export const WarmShoulder = () => {
-  return (
-    <div>WarmShoulder</div>
-  )
+  const [warmShoulderArr, setwarmShoulderArr] = useState([]);
+  useEffect(() => {
+      setwarmShoulderArr(JSON.parse(localStorage.getItem("warmShoulderArr")))
+  }, []);
+return (
+  warmShoulderArr.map((value, index) => (
+      <WarmShoulderPage key={index} index={index} />
+    ))
+)
+
 }
