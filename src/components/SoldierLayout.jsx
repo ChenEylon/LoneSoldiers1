@@ -1,6 +1,8 @@
-import React from 'react'
+
 import './Layout.css'
 import { Link, Outlet } from 'react-router-dom';
+import { CDBModalFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
+import React, { useEffect, useRef, useState } from 'react';
 
 export const SoldierLayout = () => {
     
@@ -8,12 +10,12 @@ export const SoldierLayout = () => {
     <div id='body-container'>
       <nav id='navbar'>
         <Link to='/Soldier' className="link"><img className="logo" src="../../logo-with-background.png" alt="MindGames Logo" /></Link>
-        <div className="nav-title"><Link to='/Soldier' className="link navLink">Home</Link><span></span></div>
-        <div className="nav-title"><Link to='/SweetHome' className="link navLink">Events</Link><span></span></div>
-        <div className="nav-title"><Link to='/WalkingWith' className="link navLink">Events</Link><span></span></div>
-        <div className="nav-title"><Link to='/WarmShoulder' className="link navLink">Events</Link><span></span></div>
-        {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div>
-        {loginNav} */}
+        <div className="nav-title"><Link to='/Soldier' className="link navLink">בית</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/SweetHome' className="link navLink">בית חם</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/WalkingWith' className="link navLink">צועדים איתך</Link><span></span></div>
+        <div className="nav-title"><Link to='/Soldier/WarmShoulder' className="link navLink">כתף חמה</Link><span></span></div>
+         {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div> 
+        {loginNav}  */}
         
       </nav>
       <div id="under-nav">
