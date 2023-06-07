@@ -9,7 +9,7 @@ import { Homepage } from './components/Homepage'
 import { SweetHome } from './components/SweetHome'
 import { WalkingWith } from './components/WalkingWith'
 import { WarmShoulder } from './components/WarmShoulder'
-import { SignUp } from './components/SignUp'
+import  SignUp  from './components/SignUp'
 
 function App() {
 
