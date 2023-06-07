@@ -10,9 +10,30 @@ import { SweetHome } from './components/SweetHome'
 import { WalkingWith } from './components/WalkingWith'
 import { WarmShoulder } from './components/WarmShoulder'
 import  SignUp  from './components/SignUp'
+import LoneSoldier from './json/LoneSoldier.json'
+import sweetHome from './json/SweetHome.json'
+import users from './json/users.json'
+import walkingWithYou from './json/walkingWithYou.json'
+import warmShoulder from './json/warmShoulder.json'
+
 
 function App() {
-
+  if(!localStorage.getItem("loneSoldierArr")){
+    localStorage.setItem("loneSoldierArr",JSON.stringify(LoneSoldier.LoneSoldier));
+  }
+  if(!localStorage.getItem("usersArr")){
+    localStorage.setItem("usersArr",JSON.stringify(users.users));
+  }
+  if(!localStorage.getItem("walkingArr")){
+    localStorage.setItem("walkingArr",JSON.stringify(walkingWithYou.walkingWithYou));
+  }
+  if(!localStorage.getItem("warmShoulderArr")){
+    localStorage.setItem("warmShoulderArr",JSON.stringify(warmShoulder.warmShoulder));
+  }
+  
+  if(!localStorage.getItem("sweetHomeArr")){
+    localStorage.setItem("sweetHomeArr",JSON.stringify(sweetHome.sweetHome));
+  }
 
   return (
     <>
