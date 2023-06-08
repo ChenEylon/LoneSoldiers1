@@ -73,14 +73,14 @@ function FormShoulder({setNewFormClicked}) {
                             type="text"
                             name="name"
                             {...register('name', {
-                              required: { value: true, message: 'Please enter your name' },
+                              required: { value: true, message: 'אנא הכנס שם פרטי' },
                               maxLength: {
                                 value: 30,
                                 message: 'Please use 30 characters or less'
                               }
                             })}
                             className="form-control formInput"
-                            placeholder="Name"
+                            placeholder="שם פרטי"
                           />
                           {errors.name && <span className="errorMessage">{errors.name.message}</span>}
                         </div>
@@ -93,10 +93,10 @@ function FormShoulder({setNewFormClicked}) {
                               pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                             })}
                             className="form-control formInput"
-                            placeholder="Email address"
+                            placeholder="כתובת אי-מייל"
                           />
                           {errors.email && (
-                            <span className="errorMessage">Please enter a valid email address</span>
+                            <span className="errorMessage">בבקה הכנס כתובת אי-מייל תקינה</span>
                           )}
                         </div>
                       </div>
@@ -107,14 +107,14 @@ function FormShoulder({setNewFormClicked}) {
                             type="text"
                             name="img"
                             {...register('img', {
-                              required: { value: true, message: 'Please enter a subject' },
+                              required: { value: true, message: 'אנא בחר תמונה' },
                               maxLength: {
                                 value: 75,
                                 message: 'add img'
                               }
                             })}
                             className="form-control formInput"
-                            placeholder="Img"
+                            placeholder="תמונה"
                           />
                           {errors.subject && (
                             <span className="errorMessage">{errors.subject.message}</span>
@@ -126,14 +126,14 @@ function FormShoulder({setNewFormClicked}) {
                         <div className="col">
                           <textarea
                             rows={3}
-                            name="lastname"
-                            {...register('Lastname', {
+                            name="lastName"
+                            {...register('LastName', {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="Last name"
+                            placeholder="שם משפחה"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a Last Name</span>}
+                          {errors.message && <span className="errorMessage">אנא הכנס שם משפחה</span>}
                         </div>
                       </div>
                    
@@ -147,9 +147,9 @@ function FormShoulder({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="contact"
+                            placeholder="איש קשר"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a contact </span>}
+                          {errors.message && <span className="errorMessage">אנא הכנס פרטי איש קשר </span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -161,9 +161,9 @@ function FormShoulder({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="phone"
+                            placeholder="מספר טלפון"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a phone number</span>}
+                          {errors.message && <span className="errorMessage">אנא הכנס מספר טלפון נייד</span>}
                         </div>
                       </div>
                      
@@ -176,13 +176,13 @@ function FormShoulder({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="description"
+                            placeholder="תיאור"
                           />
-                          {errors.message && <span className="errorMessage">Please enter the description </span>}
+                          {errors.message && <span className="errorMessage">אנא הכנס תיאור</span>}
                         </div>
                       </div>
                       <button className="submit-btn" type="submit">
-                        Submit
+                        הכנס פרטים
                       </button>
                     </form>
                   </div>
@@ -194,7 +194,7 @@ function FormShoulder({setNewFormClicked}) {
       } else {
         return (
           <div>
-            The message sent, thank you!
+            ההודעה נשלחה, תןדה לך 
             <button className="new-message-btn" onClick={() => setSubmitted(false)}>
               New message
             </button>

@@ -9,7 +9,7 @@ export const WalkingWithPage = ({ index }) => {
   let imgUrl = walkingArr[index].img;
   let phone = walkingArr[index].phone;
   let contact = walkingArr[index].contact;
-  let discription = walkingArr[index].discription;
+  let discription = walkingArr[index].discriptions;
   let lastName = walkingArr[index].lastName;
   let name = walkingArr[index].name;
   let email = walkingArr[index].id;
