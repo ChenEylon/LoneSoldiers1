@@ -16,7 +16,7 @@ font-size: small;
     font-family: sans-serif;
     height: 50px;
     width: 100%;
-    background-color: #E0E1DD;
+    background-color: #2D6A4F;
     box-shadow: 7px 7px 6px 1px rgba(0, 0, 0, 0.2);
     position: fixed;
     z-index: 5;
@@ -30,11 +30,11 @@ font-size: small;
     cursor: pointer;
   }
   .shadow {
-    background-color: #E0E1DD;
+    background-color: #74C69D;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .body{
-    background-color: #E0E1DD;
+    background-color: #D8F3DC;
 }
 
 #main-section{
@@ -179,8 +179,14 @@ font-size: small;
   .nav-title:active span::before {
     background: #415A77;
   }
+  h2{
+    position: absolute;
+    top: 10vh;
+    left :15vw;
+    z-index: 1;
+  }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     #payment-form {
         display: flex;
       flex-direction: column;
@@ -195,5 +201,7 @@ font-size: small;
         padding-left: 5px;
         padding-right: 5px;
     }
-    
-} */
+    h2{
+        display: none;
+    }
+}
