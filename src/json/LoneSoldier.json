@@ -7,6 +7,12 @@
       "lastName": "גאון"
     },
     {
+      "email":"shon@gmail.com",
+      "password":"1234", 
+      "name": "שון", 
+      "lastName": "ירושלמי"
+    },
+    {
       "email":"banana@info.com",
       "password":"123Q4", 
       "name": "ישראל", 
