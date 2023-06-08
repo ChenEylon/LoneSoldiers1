@@ -83,7 +83,7 @@ function FormHouse({setNewFormClicked}) {
                               }
                             })}
                             className="form-control formInput"
-                            placeholder="Name"
+                            placeholder="שם"
                           />
                           {errors.name && <span className="errorMessage">{errors.name.message}</span>}
                         </div>
@@ -96,10 +96,10 @@ function FormHouse({setNewFormClicked}) {
                               pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                             })}
                             className="form-control formInput"
-                            placeholder="Email address"
+                            placeholder="כתובת אימייל"
                           />
                           {errors.email && (
-                            <span className="errorMessage">Please enter a valid email address</span>
+                            <span className="errorMessage">הקלד אימייל תקין</span>
                           )}
                         </div>
                       </div>
@@ -118,7 +118,7 @@ function FormHouse({setNewFormClicked}) {
                               }
                             })}
                             className="form-control formInput"
-                            placeholder="Img"
+                            placeholder="הוסף תמונה"
                           />
                           {errors.subject && (
                             <span className="errorMessage">{errors.subject.message}</span>
@@ -130,14 +130,14 @@ function FormHouse({setNewFormClicked}) {
                         <div className="col">
                           <textarea
                             rows={3}
-                            name="lastname"
-                            {...register('Lastname', {
+                            name="lastName"
+                            {...register('LastName', {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="Last name"
+                            placeholder="שם משפחה"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a Last Name</span>}
+                          {errors.message && <span className="errorMessage">הכנס שם משפחה</span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -149,9 +149,9 @@ function FormHouse({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="number Of Souls"
+                            placeholder="מספר נפשות"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a number Of Souls</span>}
+                          {errors.message && <span className="errorMessage">הכנס מספר נפשות</span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -163,9 +163,9 @@ function FormHouse({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="about Us"
+                            placeholder=" קצת עלינו"
                           />
-                          {errors.message && <span className="errorMessage">Please enter about Us</span>}
+                          {errors.message && <span className="errorMessage">הכנס עלינו</span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -177,23 +177,24 @@ function FormHouse({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="contact"
+                            placeholder="איש קשר"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a contact </span>}
+                          {errors.message && <span className="errorMessage">הכנס איש קשר</span>}
                         </div>
                       </div>
                       <div className="row formRow">
                         <div className="col">
                           <textarea
                             rows={3}
+                            type='number'
                             name="phone"
                             {...register('phone', {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="phone"
+                            placeholder="מספר טלפון"
                           />
-                          {errors.message && <span className="errorMessage">Please enter a phone number</span>}
+                          {errors.message && <span className="errorMessage">הכנס מספר טלפון</span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -205,9 +206,9 @@ function FormHouse({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="location"
+                            placeholder="מיקום"
                           />
-                          {errors.message && <span className="errorMessage">Please enter location </span>}
+                          {errors.message && <span className="errorMessage">הכנס מיקום </span>}
                         </div>
                       </div>
                       <div className="row formRow">
@@ -219,13 +220,13 @@ function FormHouse({setNewFormClicked}) {
                               required: true
                             })}
                             className="form-control formInput"
-                            placeholder="conditions"
+                            placeholder="תנאים"
                           />
-                          {errors.message && <span className="errorMessage">Please enter the conditions </span>}
+                          {errors.message && <span className="errorMessage">הכנס תנאים </span>}
                         </div>
                       </div>
                       <button className="submit-btn" type="submit">
-                        Submit
+                       הכנס פרטים
                       </button>
                     </form>
                   </div>
@@ -237,9 +238,9 @@ function FormHouse({setNewFormClicked}) {
       } else {
         return (
           <div>
-            The message sent, thank you!
+            ההודעה נשלחה,תודה רבה!
             <button className="new-message-btn" onClick={() => setSubmitted(false)}>
-              New message
+              הודעה חדשה
             </button>
           </div>
         );
