@@ -8,7 +8,7 @@ export const SweetHomePage = ({ index }) => {
   let phone = sweetHomeArr[index].phone;
   let contact = sweetHomeArr[index].contact;
   let discription = sweetHomeArr[index].discription;
-  let  condition = sweetHomeArr[index].condition;
+  let  condition = sweetHomeArr[index].conditions;
   let  lastName= sweetHomeArr[index]. lastName;
   let name = sweetHomeArr[index].name;
   let id = sweetHomeArr[index].id;
@@ -17,27 +17,27 @@ export const SweetHomePage = ({ index }) => {
   let location = sweetHomeArr[index].location;
 
   return (
-    <div id="card-container">
-      <div id="image-container">
-        <img id="the-img" src={imgUrl} />
-        <div id="info">
-        <div id="card-discription">
-        <h3>"{name}{lastName}"</h3>
-          <span>
-            {condition} 
-          </span>
-          <span>  Call:{phone}</span>
-        </div>
-      </div>
-      </div>
-        <div id="buy-section">
-        <span id="price">{contact}</span>
-        <span id="price">{id}</span>
-        <span id="price">{location}</span>
-        <span id="price">{aboutUs}</span>
-        <span id="price">{numberOfSouls}</span>
-        <span id="view-btn">{discription}</span>
-        </div>
-    </div>
-  );
+    
+      <div className="sweet-home-card-container">
+              <img className="image-container-sweet" src={imgUrl} alt=""  />
+          <div className="description-container-sweet">
+              <div className="description-header-container">    
+                  <p  className="description-header">
+                    {lastName}
+                  </p>
+              </div>
+              <div className="description-content-container">
+                  <p className="description-content">
+                      <div id="soules">מספר נפשות בבית: {numberOfSouls}</div>
+                      <div id="about">{aboutUs}</div>
+                      <div id="address">כתובת:{location}</div>
+                      <div id="contact">איש קשר: {name} {lastName},{phone}</div>
+                      <div id="conditions">תנאים: {condition}</div>
+                  </p>
+              </div>
+          </div>
+          
+   </div>
+  
+);
 }
