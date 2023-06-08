@@ -37,8 +37,11 @@ function Login({setIsLogIn}) {
 
       setLoginData(updatedLoginData);
       setSubmitted(true);
-      setIsLogIn(true)
-      const url = `/Volunteerpage`;
+
+      // setIsLogIn(true);
+
+      const url = `/Volunteer`;
+
       window.history.pushState({}, "", url);
       window.location.reload();
     } else {

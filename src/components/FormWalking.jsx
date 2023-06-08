@@ -3,48 +3,35 @@ import './FormHouse.css'
 import { useForm } from 'react-hook-form';
 
 
-function FormWalking() {
+function FormWalking({setNewFormClicked}) {
     const [submitted, setSubmitted] = useState(false);
+    const [walkingArr, setWalkingArr] = useState(JSON.parse(localStorage.getItem("walkingArr")));
+
+    
+    
     const {
       register,
       handleSubmit,
       formState: { errors },
       reset
     } = useForm();
-  
+
     const form = useRef();
     
-    const toastifySuccess = (data) => {
-      const { id,
-      img , 
-      name,
-       lastName, 
-      contact,
-      phone,
-     discription} = data;
-  
-      toast('Form sent!', {
-        position: 'bottom-right',
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        className: 'submit-feedback success',
-        toastId: 'notifyToast'
-      });
-      reset();
-      setSubmitted(true);
-    };
+ 
+
+    
     const handleFormSubmit = (data, e) => {
-        onSubmit(data);
-        sendEmail(e);
+        onSubmit(data); 
       };
     
     
       const onSubmit = (data) => {
         console.log('Form Data:', data);
-        toastifySuccess(data);
+        let temp = [...walkingArr, data];
+         localStorage.setItem('walkingArr', JSON.stringify(temp));
+         setNewFormClicked(4)
+         alert("נרשמת בהצלחה")
       };
     
       if (!submitted) {

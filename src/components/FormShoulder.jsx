@@ -3,8 +3,9 @@ import './FormHouse.css'
 import { useForm } from 'react-hook-form';
 
 
-function FormShoulder() {
+function FormShoulder({setNewFormClicked}) {
     const [submitted, setSubmitted] = useState(false);
+    const [warmShoulderArr, setWarmShoulderArr] = useState(JSON.parse(localStorage.getItem("warmShoulderArr")));
     const {
       register,
       handleSubmit,
@@ -45,9 +46,13 @@ function FormShoulder() {
       };
     
     
+      
       const onSubmit = (data) => {
         console.log('Form Data:', data);
-        toastifySuccess(data);
+        let temp = [...warmShoulderArr, data];
+         localStorage.setItem('warmShoulderArr', JSON.stringify(temp));
+         setNewFormClicked(4)
+         alert("נרשמת בהצלחה")
       };
     
       if (!submitted) {
