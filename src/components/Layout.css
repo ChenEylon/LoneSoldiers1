@@ -179,7 +179,7 @@ font-size: small;
   .nav-title:active span::before {
     background: #415A77;
   }
-  h2{
+  .shtok{
     position: absolute;
     top: 10vh;
     left :15vw;
