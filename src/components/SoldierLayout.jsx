@@ -70,7 +70,7 @@ function loginState() {
                   <img className="logo" src="../../logo.jpg" alt="MindGames Logo" />
                 </a>
                 <p className="my-3" style={{ width: '250px' }}>
-                  MindGames: Unleashing the power of knowledge through captivating lectures and seamless ticketing.
+                HandByHand is an organization dedicated to making a positive impact on communities by extending a helping hand to those in need, promoting unity and compassion.
                 </p>
                 <CDBBox display="flex" className="mt-4">
                   <CDBBtn flat color="dark">
@@ -94,7 +94,7 @@ function loginState() {
               </CDBBox>
               <CDBBox>
                 <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-                  MindGames
+                HandByHand
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0', display: 'flex' }}>
 

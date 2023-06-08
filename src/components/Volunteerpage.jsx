@@ -28,7 +28,7 @@ export const Volunteerpage = () => {
   function cancleBtn() {
     if (newFormClicked == 1 || newFormClicked == 2 || newFormClicked == 3) {
       return (
-        <button className="cssbuttons-io-button" onClick={() => setNewFormClicked(4)}>
+        <button className="cssbuttons-io-button cancelbutton" onClick={() => setNewFormClicked(4)}>
           cancel creation
         </button>
       )
@@ -38,9 +38,9 @@ export const Volunteerpage = () => {
 
 
   return (
-    <div className="volenteer-page-container">
-      <div className="volenteer-image-container">
-        <img src="https://img.picturequotes.com/1/661/no-one-has-ever-become-poor-from-giving-quote-1.jpg" alt="Soldiers" />
+    <div className="volunteer-page-container">
+      <div className="volunteer-image-container">
+        <img className='volunteer-image' src="https://img.picturequotes.com/1/661/no-one-has-ever-become-poor-from-giving-quote-1.jpg" alt="Soldiers" />
         <div className="image-text-overlay">
 
         </div>
@@ -71,11 +71,11 @@ export const Volunteerpage = () => {
               <FontAwesomeIcon icon={faPersonWalkingArrowRight} style={{ color: 'white' }} />
             </div>
             <p className="activity-text">לך צד לצד עם לוחמים כמנטור</p>
-            <p className="activity-description">ספקו לחייל בודד את ביתכם החם והתנדבו היום בכדי לעזור לקהילה ולחמם לעוד חייל את הלב. אנחנו רק נקשר אתכם אל החייל שלכם וקבלו אותו באהבה</p>
+            <p className="activity-description">היה מנטור של חיילים, תן להם קצת מניסיון החיים שלך, תהיה הורה ואח למי שצריך</p>
             <div className="sign-button">
 
               <button className="cssbuttons-io-button" onClick={() => setNewFormClicked(1)}>
-                Create new Event
+                צועדים איתך
               </button>
 
             </div>
@@ -90,7 +90,7 @@ export const Volunteerpage = () => {
               <div className="sign-button">
 
                 <button className="cssbuttons-io-button" onClick={() => setNewFormClicked(2)}>
-                  Create new Event
+                  בית חם
                 </button>
               </div>
           </div>
@@ -99,12 +99,12 @@ export const Volunteerpage = () => {
               <div className="activity-icon">
                 <FontAwesomeIcon icon={faPhoneVolume} style={{ color: 'white' }} />
               </div>
-              <p className="activity-text">ספק בית לחייל בודד ותעשה להם את היום</p>
-              <p className="activity-description">ספקו לחייל בודד את ביתכם החם והתנדבו היום בכדי לעזור לקהילה ולחמם לעוד חייל את הלב. אנחנו רק נקשר אתכם אל החייל שלכם וקבלו אותו באהבה</p>
+              <p className="activity-text">אתה החבר הטלפוני שהם צריכים</p>
+              <p className="activity-description">תהיה קשוב, סבלני, אל תשפוט, תתן מעצמך עוד קצת למען האחר</p>
               <div className="sign-button">
 
                 <button className="cssbuttons-io-button" onClick={() => setNewFormClicked(3)}>
-                  Create new Event
+                  כתף חמה
                 </button>
               </div>
             </div>
