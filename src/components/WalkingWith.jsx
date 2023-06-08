@@ -9,9 +9,10 @@ export const WalkingWith = () => {
       setwalkingArr(JSON.parse(localStorage.getItem("walkingArr")))
   }, []);
 return (
-  walkingArr.map((value, index) => (
+  <div className='walkingpage'>
+  {walkingArr.map((value, index) => (
       <WalkingWithPage key={index} index={index} />
-    ))
+    ))}</div>
 )
 
 }

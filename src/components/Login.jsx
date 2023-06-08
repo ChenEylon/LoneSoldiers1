@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Login() {
+function Login({setIsLogIn}) {
   const [usersArr, setUsersArr] = useState(
     JSON.parse(localStorage.getItem("usersArr")) || []
   );
@@ -37,8 +37,7 @@ function Login() {
 
       setLoginData(updatedLoginData);
       setSubmitted(true);
-      // setIsLogIn(true);
-
+      setIsLogIn(true)
       const url = `/Volunteerpage`;
       window.history.pushState({}, "", url);
       window.location.reload();

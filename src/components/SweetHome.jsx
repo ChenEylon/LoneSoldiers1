@@ -8,8 +8,12 @@ export const SweetHome = () => {
         setsweetHomeArr(JSON.parse(localStorage.getItem("sweetHomeArr")))
     }, []);
   return (
-    sweetHomeArr.map((value, index) => (
+    <div className='pagecontainer'>
+    {sweetHomeArr.map((value, index) => (
         <SweetHomePage key={index} index={index} />
-      ))
+        
+    ))}
+     </div>  
   )
+ 
 }

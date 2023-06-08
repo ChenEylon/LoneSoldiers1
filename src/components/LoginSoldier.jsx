@@ -37,9 +37,9 @@ function LoginSoldier() {
 
       setLoginData(updatedLoginData);
       setSubmitted(true);
-      // setIsLogIn(true);
+     
 
-      const url = `/Homepage`;
+      const url = `/Soldier`;
       window.history.pushState({}, "", url);
       window.location.reload();
     } else {
