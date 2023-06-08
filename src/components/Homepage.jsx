@@ -55,7 +55,7 @@ useEffect(()=>{
               <p className="activity-text">מצא נחמה ותמיכה כחייל בודד דרך הפלטפורמה שלנו</p>
               <p className="activity-description"> חלל ייעודי זה נועד לתת מענה לצרכים והאתגרים הייחודיים שלכם במהלך השירות הצבאי שלכם, במיוחד אם אתם מוצאים את עצמכם ללא הנוחות של קשרים משפחתיים. אנו מבינים את המורכבות שעומדת בפניכם ונמצאים כאן כדי לספק את הסיוע והאחווה המגיעים לכם</p>
               <div className="sign-button">
-              <Link to='/Soldier/SweetHome' ><button> בית חם</button></Link>
+              <Link to='/Soldier/SweetHome' ><button id="butn"> בית חם</button></Link>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ useEffect(()=>{
               <p className="activity-text">תמצא את המנטור שלך לחיים</p>
               <p className="activity-description">לכל אחד יש דמות שהוא מעריץ. תמצאו את הדמות שלכםת תלמדו ממנה וקחו ממנה כמה שתוכלו</p>
               <div className="sign-button">
-              <Link to='/Soldier/WalkingWith'> <button> ללכת איתך</button></Link>
+              <Link to='/Soldier/WalkingWith'> <button id="butn"> ללכת איתך</button></Link>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ useEffect(()=>{
               <p className="activity-text">תמצא אוזן קשבת בשבילך</p>
               <p className="activity-description">כל אחד צריך לפרוק אצל מישהות מישהו שיקשיב לו בלי לשפוט ורק יחבקץ יכול להיות שהמישהו הזה נמצא בצד השני של הקו!</p>
               <div className="sign-button">
-              <Link to='/Soldier/WarmShoulder'> <button> כתף חמה</button></Link>
+              <Link to='/Soldier/WarmShoulder'> <button id="butn"> כתף חמה</button></Link>
               </div>
             </div>
           </div>
