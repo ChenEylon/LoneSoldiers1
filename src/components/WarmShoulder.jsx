@@ -14,7 +14,7 @@ return (
  { warmShoulderArr.map((value, index) => (
       <WarmShoulderPage key={index} index={index} />
     ))}
-    /</div>
+    </div>
 )
 
 }

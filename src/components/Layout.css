@@ -78,13 +78,13 @@ font-size: small;
 .logBtn{
     all: unset;
     padding: 7px;
-    background-color: #415A77;
+    background-color: #95D5B2;
     border-radius: 5px;
 }
 
 .logBtn:hover{
     scale: 120%;
-    background-color: #778DA9;
+    background-color: #95D5B2;
 
 }
 #payment-container{
@@ -150,7 +150,7 @@ font-size: small;
     height: 100%;
     background: transparent;
     z-index: -1;
-    border: 4px solid #415A77;
+    border: 4px solid #95D5B2;
   }
   
   .nav-title span::before {
@@ -159,7 +159,7 @@ font-size: small;
     position: absolute;
     width: 8%;
     height: 500%;
-    background: #E0E1DD;
+    background: #2D6A4F;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-60deg);
@@ -169,7 +169,7 @@ font-size: small;
   .nav-title:hover span::before {
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
-    background: #415A77;
+    background: #74C69D;
   }
   
   .nav-title:hover {

@@ -1,15 +1,4 @@
 
-.gradient-custom {
-
-    background: #6a11cb;
-    
- 
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-    
-
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-    }
-
     #login-container{
         display: flex;
         flex-direction: row;
@@ -22,7 +11,7 @@
     .logIn-container {
         width: 350px;
         padding: 40px;
-        background-color: #212529;
+        background-color: #1B4332;
         height: 80%;
         border-radius: 20px;
         margin: 20px;

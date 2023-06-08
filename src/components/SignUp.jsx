@@ -61,7 +61,7 @@ function SignUp() {
                   <>
                     <h2 className="fw-bold mb-2 text-uppercase">החשבון נוצר</h2>
                     <p className="text-white-50 mb-5"> 
-                    <Link to="/Login" > תתחבר</Link>
+                    <Link to="/" > תתחבר</Link>
                     </p>
                   </>
                 ) : (
