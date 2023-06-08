@@ -5,7 +5,7 @@ import "./Login.css"
 function LoginPage() {
   return (
     <div id="login-container">
-    <Login/>
+    <Login />
     <LoginSoldier/>
     </div>
   )

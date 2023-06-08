@@ -16,6 +16,7 @@ import users from "./json/users.json";
 import walkingWithYou from "./json/walkingWithYou.json";
 import warmShoulder from "./json/warmShoulder.json";
 import FormHouse from "./components/FormHouse";
+import React, { useEffect, useState } from "react";
 
 function App() {
   if (!localStorage.getItem("loneSoldierArr")) {
@@ -43,14 +44,14 @@ function App() {
   if (!localStorage.getItem("sweetHomeArr")) {
     localStorage.setItem("sweetHomeArr", JSON.stringify(sweetHome.sweetHome));
   }
-
+  const [isLogIn, setIsLogIn] = useState(localStorage.getItem('loginData'));
   return (
     <>
       <div className="body">
         <Routes>
-          <Route path="/" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage  />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/Volunteer" element={<VolunteerLayout />}>
+          <Route path="/Volunteer" element={<VolunteerLayout  />}>
             <Route path="/Volunteer" element={<Volunteerpage />} />
           </Route>
           <Route path="/Soldier" element={<SoldierLayout />} >
