@@ -186,6 +186,10 @@ font-size: small;
     z-index: 1;
   }
 
+  .modal-footer{
+    background-color: #2D6A4F;
+  }
+
 @media (max-width: 768px) {
     #payment-form {
         display: flex;

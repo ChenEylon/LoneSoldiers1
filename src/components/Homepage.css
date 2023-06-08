@@ -241,9 +241,20 @@ p {
     .website-description-container-complete{
         width: 95%;
     }
+    .activity-large-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 480px) {
+    .activity-large-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .website-description-container {
         flex-direction: column;
     }
