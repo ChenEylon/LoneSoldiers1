@@ -48,8 +48,7 @@ function loginState() {
         <div className="nav-title"><Link to='/Soldier/SweetHome' className="link navLink">בית חם</Link><span></span></div>
         <div className="nav-title"><Link to='/Soldier/WalkingWith' className="link navLink">צועדים איתך</Link><span></span></div>
         <div className="nav-title"><Link to='/Soldier/WarmShoulder' className="link navLink">כתף חמה</Link><span></span></div>
-         {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div> 
-        {loginNav}  */}
+        
       {loginNav}
         
       </nav>
