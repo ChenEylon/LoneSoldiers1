@@ -6,7 +6,7 @@ export const VolunteerLayout = () => {
   return (
     <div id='body-container'>
       <nav id='navbar'>
-        <Link to='/Volunteer' className="link"><img className="logo" src="../../logo-with-background.png" alt="MindGames Logo" /></Link>
+        <Link to='/Volunteer' className="link"><img className="logo" src="../../logo.jpg" alt="MindGames Logo" /></Link>
 
         <div className="nav-title"><Link to='/Soldier' className="link navLink">בית</Link><span></span></div>
          {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div> 
@@ -29,10 +29,10 @@ export const VolunteerLayout = () => {
             <CDBBox display="flex" justifyContent="between" className="flex-wrap">
               <CDBBox>
                 <a href="/" className="d-flex align-items-center p-0 text-dark">
-                  <img className="logo" src="../../logo-with-background.png" alt="MindGames Logo" />
+                  <img className="logo" src="../../logo.jpg" alt="MindGames Logo" />
                 </a>
                 <p className="my-3" style={{ width: '250px' }}>
-                  MindGames: Unleashing the power of knowledge through captivating lectures and seamless ticketing.
+                HandByHand is an organization dedicated to making a positive impact on communities by extending a helping hand to those in need, promoting unity and compassion."
                 </p>
                 <CDBBox display="flex" className="mt-4">
                   <CDBBtn flat color="dark">
@@ -56,7 +56,7 @@ export const VolunteerLayout = () => {
               </CDBBox>
               <CDBBox>
                 <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-                  MindGames
+                HandByHand
                 </p>
                 <CDBBox flex="column" style={{ cursor: 'pointer', padding: '0', display: 'flex' }}>
 

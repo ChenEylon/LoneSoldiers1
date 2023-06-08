@@ -37,6 +37,30 @@ body {
     background-color: white;
     color: #022B02;
 }
+.volunteer-image-container {
+    width: 100%;
+}
+ .volunteer-image{
+    width: 100%;
+}
+.image-container-home{
+    width: 100%;
+    position: relative;
+}
+.container-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cancelbutton{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.activity-large-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .image-container {
     padding-top: 100px;
@@ -117,7 +141,12 @@ body {
     font-size: 20px;
     font-weight: 500;
 }
-
+.volunteer-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .website-description-content {
     margin-right: 30px;
     direction: rtl;
