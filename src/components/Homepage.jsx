@@ -52,7 +52,7 @@ useEffect(()=>{
               <div className="activity-icon">
               <FontAwesomeIcon icon={faHouse} style={{ color: 'white' }} />
               </div>
-              <p className="activity-text">מצא נחמה ותמיכה כחייל בודד דרך הפלטפורמה שלנו</p>
+              <p className="activity-text">מצא בית חם שיארח אותך בסופ"ש הקרוב</p>
               <p className="activity-description"> חלל ייעודי זה נועד לתת מענה לצרכים והאתגרים הייחודיים שלכם במהלך השירות הצבאי שלכם, במיוחד אם אתם מוצאים את עצמכם ללא הנוחות של קשרים משפחתיים. אנו מבינים את המורכבות שעומדת בפניכם ונמצאים כאן כדי לספק את הסיוע והאחווה המגיעים לכם</p>
               <div className="sign-button">
               <Link to='/Soldier/SweetHome' ><button> בית חם</button></Link>

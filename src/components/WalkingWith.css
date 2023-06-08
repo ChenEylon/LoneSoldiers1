@@ -52,19 +52,21 @@ margin-bottom: 10px;
     width: fit-content;
 }
 .send {
-    font-family: inherit;
-    font-size: 20px;
-    background: royalblue;
-    color: white;
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-  }
+  font-family: inherit;
+  font-size: 20px;
+  background: #2D6A4F;
+  color: white;
+  padding: 2px;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
   
   .send span {
     display: block;

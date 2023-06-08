@@ -71,14 +71,6 @@ function Login({setIsLogIn}) {
         />
         <label className="form-label">סיסמה</label>
       </div>
-      <button
-        className="btn btn-outline-light btn-lg px-5"
-        type="submit"
-        onClick={handleLogin}
-      >
-        התחבר
-      </button>
-
       <div>
         <p className="mb-0">
           אין לך עדיין חשבון?{" "}
@@ -87,6 +79,15 @@ function Login({setIsLogIn}) {
           </Link>
         </p>
       </div>
+      <button
+        className="btn btn-outline-light btn-lg px-5"
+        type="submit"
+        onClick={handleLogin}
+      >
+        התחבר
+      </button>
+
+     
     </div>
   );
 }

@@ -34,11 +34,12 @@ export const SweetHomePage = ({ index }) => {
   return (
     
       <div className="sweet-home-card-container">
+        <div id='sweet-left-section'>
               <img className="image-container-sweet" src={imgUrl} alt=""  />
           <div className="description-container-sweet">
               <div className="description-header-container">    
                   <p  className="description-header">
-                    {lastName}
+                    משפחת {lastName}
                   </p>
               </div>
               <div className="description-content-container">
@@ -51,14 +52,14 @@ export const SweetHomePage = ({ index }) => {
                   </div>
               </div>
           </div>
-          
+          </div>
 
       <form className="email-form" onSubmit={sendEmail}>
       <input type="hidden" name="id" value={id} />
         <input type="hidden" name="name" value={name} />
         <button className="send" type="submit" onClick={handleClick}>
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
+              <div className="svg-wrapper-1">
+                <div className="svg-wrapper">
                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
