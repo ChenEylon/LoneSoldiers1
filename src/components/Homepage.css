@@ -162,7 +162,7 @@ body {
 }
 
 .activity-container {
-    background: #034F04;
+    background: #1B4332;
     border-radius: 10px;
     width: 250px;
     display: flex;
@@ -212,10 +212,11 @@ body {
 }
 
 .sign-button button {
+    padding: 10px;
     border-radius: 20px;
     border: 3px solid #022B02;
     color: #022B02;
-    width: 100px;
+    width: fit-content;
 }
 
 .sign-button button:hover {

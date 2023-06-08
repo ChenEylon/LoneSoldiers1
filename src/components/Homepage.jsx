@@ -68,7 +68,7 @@ useEffect(()=>{
               <p className="activity-text">תמצא את המנטור שלך לחיים</p>
               <p className="activity-description">לכל אחד יש דמות שהוא מעריץ. תמצאו את הדמות שלכםת תלמדו ממנה וקחו ממנה כמה שתוכלו</p>
               <div className="sign-button">
-              <Link to='//Soldier/WalkingWith'> <button> ללכת איתך</button></Link>
+              <Link to='/Soldier/WalkingWith'> <button> ללכת איתך</button></Link>
               </div>
             </div>
           </div>
