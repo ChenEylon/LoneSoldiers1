@@ -39,7 +39,7 @@ function Login() {
       setSubmitted(true);
       // setIsLogIn(true);
 
-      const url = `/Volunteerpage`;
+      const url = `/Volunteer`;
       window.history.pushState({}, "", url);
       window.location.reload();
     } else {

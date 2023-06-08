@@ -3,6 +3,7 @@
     box-sizing: border-box; 
 }
 
+
 #logoutBtn{
 all: unset;
 cursor: pointer;
@@ -71,6 +72,7 @@ font-size: small;
 
 #outlet{
     min-height: calc(100vh - 331px);
+    width: 100%;
 }
 
 .logBtn{
@@ -178,7 +180,7 @@ font-size: small;
     background: #415A77;
   }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #payment-form {
         display: flex;
       flex-direction: column;
@@ -194,4 +196,4 @@ font-size: small;
         padding-right: 5px;
     }
     
-}
+} */

@@ -4,8 +4,11 @@ import { useForm } from 'react-hook-form';
 import { toast, ToastContainer } from 'react-toastify';
 import { Link } from 'react-router-dom';
 
-function FormHouse() {
+function FormHouse({setNewFormClicked}) {
     const [submitted, setSubmitted] = useState(false);
+    const [sweetHomeArr, setSweetHomeArr] = useState(JSON.parse(localStorage.getItem("sweetHomeArr")));
+
+    
     const {
       register,
       handleSubmit,
@@ -49,7 +52,10 @@ function FormHouse() {
     
       const onSubmit = (data) => {
         console.log('Form Data:', data);
-        toastifySuccess(data);
+        let temp = [...sweetHomeArr, data];
+         localStorage.setItem('sweetHomeArr', JSON.stringify(temp));
+         setNewFormClicked(4)
+         alert("נרשמת בהצלחה")
       };
     
       if (!submitted) {
