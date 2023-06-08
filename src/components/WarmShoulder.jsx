@@ -10,9 +10,11 @@ export const WarmShoulder = () => {
       setwarmShoulderArr(JSON.parse(localStorage.getItem("warmShoulderArr")))
   }, []);
 return (
-  warmShoulderArr.map((value, index) => (
+   <div className='walkingpage'>
+ { warmShoulderArr.map((value, index) => (
       <WarmShoulderPage key={index} index={index} />
-    ))
+    ))}
+    /</div>
 )
 
 }

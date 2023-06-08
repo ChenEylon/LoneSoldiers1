@@ -12,28 +12,33 @@ export const WarmShoulderPage = ({index}) => {
   let  condition = warmShoulderArr[index].condition;
   let  lastName= warmShoulderArr[index]. lastName;
   let name = warmShoulderArr[index].name;
-  let id = warmShoulderArr[index].id;
+  let enmail = warmShoulderArr[index].id;
 
+  function handleClick(){
+    alert(`תודה שבחרת ב${name} להיות שם בשבילך, הוא יצור קשר בקרוב`)
+ }
 
-  return (
-    <div id="card-container">
-      <div id="image-container">
-        <img id="the-img" src={imgUrl} />
-        <div id="info">
-        <div id="card-discription">
-        <h3>"{name}{lastName}"</h3>
-          <span>
-            {condition} 
-          </span>
-          <span>  Call:{phone}</span>
-        </div>
-      </div>
-      </div>
-        <div id="buy-section">
-        <span id="price">{contact}</span>
-        <span id="price">{id}</span>
-        <span id="view-btn">{discription}</span>
-        </div>
-    </div>
-  );
-}
+ return (
+   <div id="warm-container">
+     <div id="waking-card">
+     <div id="image-container">
+       <img id="the-img" src={imgUrl} />
+     </div>
+
+         <div id="card-discription">
+           <h1 id="name-title">{name} {lastName}</h1>
+           <div>
+           <div id="vol-description">
+             <h3>קצת עלי:</h3>
+             <p>{discription}</p>
+           </div>
+           <div>
+             <h3>מוזמן לפנות אלי בכל שאלה בטלפון: {phone}</h3>
+           </div>
+           </div>
+         <button className="grab-my-hand-btn" onClick={()=>handleClick()}>grab my hand</button>
+         </div>
+         </div>
+   </div>
+ );
+};

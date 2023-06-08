@@ -1,6 +1,7 @@
 *{
-    
+    direction: rtl;
     margin: 0;
+    box-sizing: border-box;
 }
 .pagecontainer{
     display: flex;
@@ -8,46 +9,45 @@
     align-items: center;
     
 }
-.sweet-home-card-container{
-    background: white;
+.sweet-home-card-container {
+    background: #B7E4C7;
     height: fit-content;
-    width:80%;
-    height: 50%;
+    width: 95%;
     display: flex;
-    display: center;
     align-items: center;
     border-radius: 10px;
-    flex-direction: row;
     border: 5px solid black;
     margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-.description-container-sweet{
-    height: fit-content;
-    border-radius: 0px 20px 20px 0px;
-    width: 600px;
-}
-.description-container-sweet{
     
-    text-align: end;
+}
+.description-container-sweet {
+    height: 250px;
+    border-radius: 0px 20px 20px 0px;
+    width: 50%;
     justify-content: flex-end;
     align-items: baseline;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .description-header{
     color: black;
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 .description-content div{
     color: black;
-    font-size: 20px;
+    font-size: 1rem;
 }
-.image-container-sweet{
-    width:400px;
-    height: 300px;
-    border-radius: 10px;
+.image-container-sweet {
+    width: 52%;
 }
 
-@media screen and (max-width:970px){
+.description-header-container{
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width:768px){
     .container{
         background: white;
         height: fit-content;
@@ -57,39 +57,11 @@
         align-items: center;
         border-radius: 10px;
     }
-    .description-header{
-        font-size: 35px;
-    }
-    .description-content div{
-        font-size: 25px;
-    }
-    .image-container-sweet{
-        padding-left: 0px;
-        width: 100%;
-    }
+  
+}
+@media screen and (max-width:460px){
+   
     .image{
         width: 90%;
-    }
-}
-@media screen and (max-width:646px){
-    .description-header{
-        font-size: 30px;
-    }
-    .description-content div{
-        font-size: 20px;
-    }
-    .image{
-        width: 90%;
-    }
-}
-@media screen and (max-width:502px){
-    .description-header{
-        font-size: 20px;
-    }
-    .description-content div{
-        font-size: 15px;
-    }
-    .image{
-        width:90%;
     }
 }

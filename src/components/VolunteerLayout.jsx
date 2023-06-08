@@ -2,17 +2,48 @@ import React, { useEffect, useState } from 'react';
 import './Layout.css'
 import { Link, Outlet } from 'react-router-dom';
 import { CDBModalFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
+import LogoutIcon from '@mui/icons-material/Logout';
+
 export const VolunteerLayout = () => {
+
+  const [isLogIn, setIsLogIn] = useState(localStorage.getItem('loginData'));    
+const [loginNav, setLoginNav] = useState("");
+const [linkto, setLinkto] = useState("");
+
+useEffect(() => {
+  setLoginNav(loginState())
+}, [isLogIn]);
+
+function loginState() {
+  if (!isLogIn) {
+    console.log(isLogIn);
+    setLinkto("/Login")
+    return <Link to="/" className="link navLink">Login</Link>
+  }
+  else{
+    setLinkto("/Myevents")
+    return <div id="logoutBtn" className="navLink" onClick={()=>{
+      localStorage.removeItem('loginData'); 
+      setIsLogIn(false)
+      const url = `/`;
+      history.pushState({}, "", url);
+      location.reload()
+    }
+  
+  }>
+    <LogoutIcon/>
+    </div>
+  }
+  
+}
   return (
     <div id='body-container'>
       <nav id='navbar'>
+
         <Link to='/Volunteer' className="link"><img className="logo" src="../../logo.jpg" alt="MindGames Logo" /></Link>
 
         <div className="nav-title"><Link to='/Soldier' className="link navLink">בית</Link><span></span></div>
-         {/* <div className="nav-title"><Link to={`${linkto}`} className="link navLink">My Events</Link><span></span></div> 
-        {loginNav}  */}
-
-        
+        {loginNav}
       </nav>
       <div id="under-nav">
 

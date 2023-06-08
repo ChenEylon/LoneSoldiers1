@@ -49,7 +49,7 @@ function App() {
     <>
       <div className="body">
         <Routes>
-          <Route path="/" element={<LoginPage  />} />
+          <Route path="/" element={<LoginPage/>} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Volunteer" element={<VolunteerLayout  />}>
             <Route path="/Volunteer" element={<Volunteerpage />} />
