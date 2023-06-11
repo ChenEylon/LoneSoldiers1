@@ -29,7 +29,7 @@ useEffect(()=>{
     <div className="container-home">
       <div className="image-container-home">
         <img className='container-home' src="https://www.newarab.com/sites/default/files/media/images/F433CDF2-DFED-4DAA-94AB-8D6FEADAC990.jpg" alt="Soldiers" />
-        <h2 className='shtok'>Thank you for your service!</h2>
+        <h2 className='shtok'>Thank you for your service</h2>
       </div>
       <div className="website-description">
         <div className="website-description-container">
